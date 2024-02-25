@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Inferno214221's LightDM Theme</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="./index.css" type="text/css">
+</head>
+
+<body>
+    <div id="panel">
+        <div id="panel-left">
+            <img id="distro-logo" src="./images/distro.svg" class="panel-hover">
+        </div>
+        <div id="panel-center">
+        </div>
+        <div id="panel-right">
+            <img id="leave-icon" src="./images/leave.svg" class="panel-hover" onclick="toggleLeaveMenu();">
+        </div>
+    </div>
+    <div id="leave-menu" hidden>
+        <div class="leave-menu-option" id="suspend" onclick="doSuspend();">
+            <img class="leave-menu-icon" src="./images/suspend.svg">
+            <span class="leave-menu-span">Suspend</span>
+        </div>
+        <div class="leave-menu-option" id="hibernate" onclick="doHibernate();">
+            <img class="leave-menu-icon" src="./images/hibernate.svg">
+            <span class="leave-menu-span">Hibernate</span>
+        </div>
+        <div class="leave-menu-option" id="restart" onclick="doRestart();">
+            <img class="leave-menu-icon" src="./images/restart.svg">
+            <span class="leave-menu-span">Restart</span>
+        </div>
+        <div class="leave-menu-option" id="shutdown" onclick="doShutdown();">
+            <img class="leave-menu-icon" src="./images/shutdown.svg">
+            <span class="leave-menu-span">Shutdown</span>
+        </div>
+    </div>
+    <div></div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

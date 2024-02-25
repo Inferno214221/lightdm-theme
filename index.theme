@@ -1,0 +1,6 @@
+[theme]
+name=Inferno214221
+description=Inferno214221's Theme
+engine=lightdm-webkit-greeter
+url=index.html
+session=xfce
