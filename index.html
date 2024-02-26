@@ -8,16 +8,20 @@
     <link rel="stylesheet" href="./index.css" type="text/css">
 </head>
 
-<body>
+<body onclick="bodyClick(event);">
     <div id="panel">
         <div id="panel-left">
             <img id="distro-logo" src="./images/distro.svg" class="panel-hover">
         </div>
         <div id="panel-center">
         </div>
-        <div id="panel-right">
-            <img id="leave-icon" src="./images/leave.svg" class="panel-hover" onclick="toggleLeaveMenu();">
-        </div>
+        <div id="panel-right"
+            ><div id="battery-wrapper" class="panel-hover"
+                ><img src="./images/battery/100.svg"
+                ><span>100%</span
+            ></div
+            ><img id="leave-icon" src="./images/leave.svg" class="panel-hover" onclick="toggleLeaveMenu();"
+        ></div>
     </div>
     <div id="leave-menu" hidden>
         <div class="leave-menu-option" id="suspend" onclick="doSuspend();">
@@ -37,7 +41,7 @@
             <span class="leave-menu-span">Shutdown</span>
         </div>
     </div>
-    <div></div>
+    <div id="container"></div>
     <script src="./index.js"></script>
 </body>
 

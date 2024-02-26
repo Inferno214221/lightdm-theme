@@ -41,6 +41,15 @@ body {
     height: 32px;
     border-bottom: #111217 1px solid;
     box-sizing: content-box;
+    z-index: 1;
+}
+
+#container {
+    position: absolute;
+    top: 33px;
+    width: 100%;
+    height: calc(100% - 33px);
+    z-index: 0;
 }
 
 #panel-left {
@@ -69,6 +78,30 @@ body {
     height: 16px;
     width: 16px;
     padding: 8px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#battery-wrapper {
+    /* display: inline; */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#battery-wrapper img {
+    height: 16px;
+    width: 16px;
+    padding: 8px 0px 8px 2px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#battery-wrapper span {
+    font-size: 11pt;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 2px;
+    padding-bottom: 2px;
 }
 
 .panel-hover:hover {
@@ -84,6 +117,7 @@ body {
     border-radius: 8px;
     padding: 4px 0px;
     width: 120px;
+    z-index: 2;
 }
 
 .leave-menu-option {
@@ -106,4 +140,8 @@ body {
     font-size: 11pt;
     display: inline-block;
     vertical-align: middle;
+}
+
+#container {
+    background-color: var(--inf-grey1);
 }

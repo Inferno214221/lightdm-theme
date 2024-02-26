@@ -1,1 +1,2 @@
-# lightdm-theme
+# Inferno214221's LightDM WebKit Greeter Theme
+A custom lock screen / login screen for use with [Nody Greeter](https://github.com/JezerM/nody-greeter). Images not included (due to potential licence conflicts).
